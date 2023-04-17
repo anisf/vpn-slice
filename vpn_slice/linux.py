@@ -142,7 +142,7 @@ class ResolveConfSplitDNSProvider(SplitDNSProvider):
 class ResolvedSplitDNSProvider(SplitDNSProvider):
     @staticmethod
     def inuse():
-        return False
+        return True
 
     def __init__(self):
         self.resolvectl = get_executable('/usr/bin/resolvectl')
